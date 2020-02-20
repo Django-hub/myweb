@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en" dir="ltr">
+	<head>
+        <meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+              
+	</head>
+	<body>
+    	<h1>Welcome to tst soft</h1>
+		<form action="/datetime">
+			{% csrf_token %}
+			
+		<table>	
+		{{ form.as_table }}
+		</table>
+        <input type="submit" name="" value="submit">
+    	</form>
+   	</body>
+</html>
+        
