@@ -13,7 +13,7 @@ from django.core.wsgi import get_wsgi_application
 path='/home/sure123/website2'
 if path not in sys.path:
     sys.path.insert(0,path)
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'website2.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'website2/website2.settings')
 
 application = get_wsgi_application()
 
